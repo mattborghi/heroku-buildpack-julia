@@ -4,5 +4,5 @@
 cat <<EOF
 ---
 default_process_types:
-  web: julia --project=$(pwd) ./app.jl $PORT
+  worker: julia --project=$(pwd) ./worker.jl
 EOF
